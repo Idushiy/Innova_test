@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кино</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+<!--favorites-->
+<div id="films" class="container">
+
+    <nav class="navbar navbar-expand-sm navbar-dark px-0 text-center justify-content-center">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nav-content"
+                aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row mt-lg-5 collapse navbar-collapse align-items-md-start" id="nav-content">
+            <div class="col-lg-2 lib_films py-5">
+                <div id="accordion" aria-multiselectable="false">
+                    <div class=" ">
+                        <div id="headingOne" class="h4" >
+                            <a data-target="#collapseOne" data-toggle="collapse"
+                               aria-expanded="true"
+                               aria-controls="collapseOne">
+                                Действия
+                                <i class="fa fa-chevron-down fa-xs"></i>
+                            </a>
+                        </div>
+                        <div class="nav justify-content-lg-center collapse nav-pills" data-parent="#accordion"
+                             id="collapseOne" aria-labelledby="headingOne" aria-orientation="vertical">
+                            <a class="nav-link" id="views-tab" data-toggle="pill" href="#views"
+                               aria-controls="views" aria-selected="true">Просмотры</a>
+                            <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#favorites"
+                               aria-controls="favorites" aria-selected="false">Избранное</a>
+                            <a class="nav-link" id="postponed-tab" data-toggle="pill"
+                               href="#postponed" aria-controls="postponed" aria-selected="false">Отложенное</a>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="h4" id="headingTwo" >
+                            <a data-target="#collapseTwo" data-toggle="collapse"
+                               aria-expanded="false" aria-controls="collapseTwo">
+                                Тарифы
+                                <i class="fa fa-chevron-down fa-xs"></i>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class=" collapse  nav-pills" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <a href="#" class="nav-link ">Скидки</a>
+                            <a href="#" class="nav-link ">Месяц</a>
+                        </div>
+                    </div>
+                    <div class="h4" id="headingThree">
+                        <a href="#"> Настройки</a>
+                    </div>
+                </div>
+            </div>
+            <!--    favorites-->
+            <div class="col-lg-10 lib_films py-5 tab-content">
+                <div class="tab-pane fade" id="favorites">
+                    <h6 class="text-left">Избранное </h6>
+                    <div class="row  pb-5">
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/b35ac1ed-ed96-4136-b951-5cf6f3069c3e/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart "></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip "
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up"></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4c5e3735-0867-4994-869f-8403f02e9239/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up"></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/0c6d775a-f544-4367-a8d6-24ac7b81a0e6/300x450"
+                                     alt="" class="img-fluid">
+
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/64ff8863-552e-4158-b4ea-e31a1c223989/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/a995fffa-a936-4b1c-b2d9-b80661e7d003/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/c6d6784a-acf0-45ea-92ed-d4ed8e0cb67f/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/a8132729-68c2-4f03-9795-0d886db8ae38/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/6827f0fa-cb4e-4975-aa63-67ce4689c436/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-5th text-left">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/3139dfcb-07f1-43ad-a0cb-c550a6f77ee9/300x450"
+                                     alt="" class="img-fluid">
+                                <i class="fa fa-5x fa-play-circle position-absolute"></i>
+                                <div class="icon-heart-times d-flex justify-content-between position-absolute">
+                                    <i class="fa fa-2x fa-heart"></i>
+                                    <i class="fa fa-2x fa-times" data-toggle="tooltip"
+                                       title="Удалить из избранного"></i>
+                                </div>
+                                <div class="icon-thumbs d-flex justify-content-between">
+                                    <i class="fa fa-1x fa-thumbs-up "></i>
+                                    <i class="fa fa-1x fa-thumbs-down"></i>
+                                </div>
+                                <p class="film-name">Дождливый день в Нью-Йорке</p>
+                                <p class="film-category">мелодрама, комедия, ...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--     views-->
+                <div class="tab-pane fade" id="views">
+                    <h6 class="text-left">Просмотры </h6>
+                    <div class="row  pb-5">
+                        <div class="col-lg-3 col-md-5th text-center">
+                            <h6 class="">Знание образует культуру обслуживания</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--    postponed-->
+                <div class="tab-pane fade" id="postponed">
+                    <h6 class="text-left">Отложенные </h6>
+                    <div class="row no-gutters pb-5">
+                        <div class="col-lg-3 col-md-5th text-center">
+                            <h6 class="">Знание образует культуру обслуживания</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<!--Scripts-->
+
+</body>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>
